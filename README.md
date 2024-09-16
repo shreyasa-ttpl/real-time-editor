@@ -5,57 +5,67 @@ Frontend is implemented using HTML/CSS, Bootstrap and ReactJS.
 Backend is implemented using NodeJS, ExpressJS and PostreSQL.
 
 
-**Functionalities Working**
+**Functionalities**
 
 Login UI 
 Real time edit by multiple users.
 If new document is created, it does not affect the old one.
 
 
-**Remaining**
+# Real-time Collaborative Document Editor
 
-Auto suggestion and grammar checks
+The application is about multiple users accessing and editing a document on the shared drive. It allows users to simultaneously edit the doc and see other user’s changes.
+
+Frontend is implemented using HTML/CSS, Bootstrap and ReactJS. Backend is implemented using NodeJS, ExpressJS and PostreSQL.
+
+## Features
+User Signup/Login
+Real time editing of document
+User friendly UI with responsiveness
+Live document updates
+
+## Setup Instructions
+
+### Prerequisites
+Ensure you have the following installed:
+Node.js (v18 or higher)
+Postgres installed
+Backend server (built with Express and Socket.io)
+
+### Frontend Setup
+
+1- Navigate to
+   ```cd realTimeDocumentEditor```
+
+2- Install the required dependencies:
+   
+  ``` npm install ```
+   
+3- Create a .env file with sample fields in .env.sample
+
+4- To run the application
+   ```npm run dev```
 
 
 
-**Improvements**
+### Backend Setup
+1- Navigate to
+```cd realTimeDocumentEditor-BE```
 
-State management
-Error handling
-Unit test cases
+2. Install the required dependencies:
+   ```npm install```
 
+3- Create a .env file with fields in .env.sample
 
-Frontend
+4- Postgres
 
-Navigate to
-cd realTimeDocumentEditor
-
-Install Dependencies
-npm install
-
-Create a .env file with sample fields in .env.sample
-
-To run the application
-npm run dev
-
-Navigate to eg url to edit the document
-http://localhost:5173/document/c4a94d72-2896-44d5-a00a-ac33a054aaa2
-
-
-Backend
-
-Navigate to
-cd realTimeDocumentEditor-BE
-
-Install Dependencies
-npm install
-
-Create a .env file with fields in .env.sample
-
-Postgres
 Create a postgres database
-npx prisma generate
-npx prisma migrate dev --create-only
 
-To run the application
-npm run dev
+```npx prisma generate```
+
+```npx prisma migrate dev --create-only```
+
+5- To run the application:
+```npm run dev```
+
+   
