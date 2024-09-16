@@ -23,3 +23,39 @@ Auto suggestion and grammar checks
 State management
 Error handling
 Unit test cases
+
+
+Frontend
+
+Navigate to
+cd realTimeDocumentEditor
+
+Install Dependencies
+npm install
+
+Create a .env file with sample fields in .env.sample
+
+To run the application
+npm run dev
+
+Navigate to eg url to edit the document
+http://localhost:5173/document/c4a94d72-2896-44d5-a00a-ac33a054aaa2
+
+
+Backend
+
+Navigate to
+cd realTimeDocumentEditor-BE
+
+Install Dependencies
+npm install
+
+Create a .env file with fields in .env.sample
+
+Postgres
+Create a postgres database
+npx prisma generate
+npx prisma migrate dev --create-only
+
+To run the application
+npm run dev
